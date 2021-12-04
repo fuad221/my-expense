@@ -2,9 +2,9 @@ import React from 'react'
 
 const TransactionList = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <h3>History</h3>
+        </>
     )
 }
 
