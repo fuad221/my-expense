@@ -1,6 +1,6 @@
 export { default as AddTransaction } from './components/AddTransaction'
 export { default as Balance } from './components/Balance'
 export { default as Header } from './components/Header'
-export { default as IncomeExpense } from './components/IncomeExpense'
+export { default as IncomeExpenses } from './components/IncomeExpenses'
 export { default as Transaction } from './components/Transaction'
 export { default as TransactionList } from './components/TransactionList'
