@@ -1,18 +1,23 @@
-import { AddTransaction, Balance, IncomeExpenses, Header, TransactionList } from './Reference-import'
+import {
+  GlobalProvider,
+  AddTransaction, Balance, IncomeExpenses, Header, TransactionList
+} from './Reference-import'
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <div className="container">
-        <Balance />
-        <IncomeExpenses />
-        <TransactionList />
-        <AddTransaction />
-      </div>
-    </div>
-  );
+    <>
+     <GlobalProvider>
+        <Header />
+        <div className="container">
+          <Balance />
+          <IncomeExpenses />
+          <TransactionList />
+          <AddTransaction />
+        </div>
+        </GlobalProvider>
+      </>
+      );
 }
 
-export default App;
+      export default App;
