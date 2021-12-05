@@ -1,10 +1,13 @@
 import React from 'react'
 
-const Transaction = () => {
+const Transaction = ({ transaction }) => {
+
+    const sign = transaction.amount < 0 ? "-" : "+";
     return (
-        <div>
-            
-        </div>
+        <li className={transaction.amount < 0 ? "minus" : "plus"}>
+             {transaction.text}{" "}
+             
+        </li>
     )
 }
 
