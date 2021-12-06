@@ -15,12 +15,15 @@ const AddTransaction = () => {
             text,
             amount: +amount,
         };
+        setText("");
+        setAmount("")
+
 
         addTransaction(newTransaction);
     };
 
     return (
-        <div>
+        <>
             <h3>Add new transaction</h3>
             <form onSubmit={onSubmit}>
                 <div className="form-control">
@@ -33,7 +36,7 @@ const AddTransaction = () => {
                     />
                 </div>
 
-                <div>
+                <div className="form-control">
                     <label htmlFor="amount">
                         (<b>-</b>/<b>+</b>)Amount &nbsp; &nbsp; [-expense , +income]
                     </label>
@@ -48,7 +51,7 @@ const AddTransaction = () => {
                 <button className="btn">Add transaction</button>
 
             </form>
-        </div>
+        </>
     )
 }
 

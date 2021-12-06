@@ -1,13 +1,12 @@
-import {
-  GlobalProvider,
-  AddTransaction, Balance, IncomeExpenses, Header, TransactionList
-} from './Reference-import'
+import React from 'react';
+import { AddTransaction, Balance, IncomeExpenses, Header, TransactionList} from './Reference-import'
+import { GlobalProvider } from './Reference-import'
 import './App.css';
 
 function App() {
   return (
     <>
-     <GlobalProvider>
+      <GlobalProvider>
         <Header />
         <div className="container">
           <Balance />
@@ -15,9 +14,9 @@ function App() {
           <TransactionList />
           <AddTransaction />
         </div>
-        </GlobalProvider>
-      </>
-      );
+      </GlobalProvider>
+    </>
+  );
 }
 
-      export default App;
+export default App;
